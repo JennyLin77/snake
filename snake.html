@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/snake.css" />
+</head>
+<body>
+	<header>
+        <h2>贪吃蛇 snake</h2>   
+    </header>
+    <div id="game-area">
+    	<canvas id="canvas" width="600" height="300">Your browser don't support canvas.</canvas>
+    </div>
+    <button id="startBtn">Start Game</button>
+    <div id="gameLevel-div">
+    	游戏等级：
+	    <ul id="gameLevel-list">
+	    	<li class="gameLevel selected">easy</li>
+	    	<li class="gameLevel">normal</li>
+	    	<li class="gameLevel">difficult</li>
+	    </ul>
+	</div>
+	<div id="info-div">
+		游戏状态：
+		<div id="time-div">当前用时：<span id="time">0</span> s</div>
+		<div id="score-div">当前得分：<span id="score">0</span></div>
+		<div id="length-div">蛇身长度：<span id="length">0</span></div>
+	</div>
+	<script type="text/javascript" src="js/snake.js"></script>
+</body>
+</html>

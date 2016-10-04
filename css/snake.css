@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    font: normal 100% Microsoft YaHei,SimHei,SimSun,Helvetica, Arial, sans-serif;
+    color: #000;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+/* header部分 */
+header {
+    z-index: 10;
+    height: 50px;
+    position: fixed;
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header>h2 {
+    position: absolute;
+    line-height: 50px;
+    left: 48px;
+    color: #999;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    font-size: 1.13rem;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+div#game-area {
+    width: 600px;
+    height: 300px;
+    margin: 120px auto 20px;
+    border: 2px solid #2A2A2A;
+    position: relative;
+}
+button#startBtn {
+    background-color: #2B2B2B;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+}
+div#gameLevel-div {
+    width: 100px;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    text-align: left;
+}
+ul#gameLevel-list {
+    display: inline-block;
+    margin-top: 15px;
+}
+li.gameLevel {
+    border: 1px solid #2B2B2B;
+    color: #2B2B2B;
+    padding: 3px 14px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+li.gameLevel.selected {
+    background-color: #2B2B2B;
+    color: #fff;
+}
+div#info-div {
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    text-align: left;
+}
+div#info-div>div {
+    margin-top: 10px;
+}
